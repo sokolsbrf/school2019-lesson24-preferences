@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DemoPreferences</string>
+
+    <string name="pref_title_toast">Показать Toast</string>
+    <string name="pref_summary_toast">Демо-настройка, показывающая toast</string>
+    <string name="pref_group_example">Различные preferences</string>
+    <string name="pref_title_subs">Вложенные настройки</string>
+
+    <string-array name="demo_list">
+        <item>Один</item>
+        <item>Два</item>
+        <item>Три</item>
+    </string-array>
+
+    <string-array name="demo_list_help">
+        <item>Выбран первый</item>
+        <item>Выбран второй</item>
+        <item>Выбран третий</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_title_tutorial">Показать туториал</string>
+</resources>

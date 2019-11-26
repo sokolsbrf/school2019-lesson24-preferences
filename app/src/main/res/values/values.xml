@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_key_toast" translatable="false">toast</string>
+    <string name="pref_key_check" translatable="false">check</string>
+    <string name="pref_key_subs" translatable="false">subpreferences</string>
+    <string name="pref_key_list">list</string>
+    <string name="pref_key_tutorial">showTutorial</string>
+
+    <string-array name="demo_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

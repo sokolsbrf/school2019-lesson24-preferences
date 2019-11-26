@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:key="@string/pref_key_toast"
+        app:title="@string/pref_title_toast"
+        app:summary="@string/pref_summary_toast"
+        app:icon="@drawable/ic_android_black_24dp"
+        />
+
+    <Preference
+        app:key="fragment"
+        app:title="Фрагмент"
+        app:fragment="ru.dimasokol.school.demopreferences.BlankFragment" />
+
+    <Preference
+        app:key="widget"
+        app:title="Custom Widget"
+        app:widgetLayout="@layout/fragment_blank" />
+
+    <PreferenceScreen
+        app:key="@string/pref_key_subs"
+        app:title="@string/pref_title_subs"
+        >
+
+        <ListPreference
+            app:key="@string/pref_key_list"
+            app:title="ListPreference"
+            app:entries="@array/demo_list"
+            app:entryValues="@array/demo_values"
+            />
+
+        <MultiSelectListPreference
+            app:key="multilist"
+            app:title="MultiSelectListPreference"
+            app:entries="@array/demo_list"
+            app:entryValues="@array/demo_values" />
+
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        app:title="@string/pref_group_example">
+
+        <CheckBoxPreference
+            app:key="@string/pref_key_check"
+            app:title="CheckBoxPreference"
+            app:summaryOn="Все остальные включены"
+            app:summaryOff="Все остальные выключены"
+            />
+
+        <SwitchPreference
+            app:key="switch"
+            app:title="SwitchPreference"
+            app:dependency="@string/pref_key_check"
+            />
+
+        <EditTextPreference
+            app:key="text"
+            app:title="EditTextPreference"
+            app:dependency="@string/pref_key_check"
+            />
+
+        <SeekBarPreference
+            app:key="seekbar"
+            app:title="SeekBarPreference"
+            app:dependency="@string/pref_key_check"
+            />
+
+        <EditTextPreference
+            app:key="text2"
+            app:title="EditTextPreference"
+            app:dependency="@string/pref_key_check"
+            app:defaultValue="DEFAULT"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Tutorial">
+
+        <SwitchPreference
+            app:key="@string/pref_key_tutorial"
+            app:title="@string/pref_title_tutorial" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
